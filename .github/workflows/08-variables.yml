@@ -5,6 +5,7 @@ on:
 env:
  WORKFLOW_VAR: 'I am a workflow env var'
  OVERWRITTEN: 'I will be overwritten'
+ UNDEFINED_VAR_WITH_DEFAULT: 'Do'
 jobs:
  echo_to_the_workflow:
    runs-on: ubuntu-latest
