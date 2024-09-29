@@ -1,0 +1,5 @@
+name: Organisation variables
+on: 
+ push:
+ workflow_dispatch:
+ 
