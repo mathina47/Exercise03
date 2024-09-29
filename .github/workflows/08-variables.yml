@@ -33,7 +33,7 @@ jobs:
   steps:
   - name: Print Variables
     run: |
-     echo "Repo var: ${{var.REPOSITORY_VAR}}"
+     echo "Repo var: ${{vars.REPOSITORY_VAR}}"
  echo-prod:
   runs-on: ubuntu-latest
   environment: Prod
@@ -41,8 +41,8 @@ jobs:
    - name: Print Prod Variables
      run: |
        echo "Org overwritten var: ${{env.OVERWRITTEN}}"
-       echo "Repo var: ${{var.REPOSITORY_VAR}}"
-       echo- "Environment var: ${{var.TARGET_VAR}}"
+       echo "Repo var: ${{vars.REPOSITORY_VAR}}"
+       echo- "Environment var: ${{vars.TARGET_VAR}}"
  echo-undefined:
    runs-on: ubuntu-latest
    steps:
